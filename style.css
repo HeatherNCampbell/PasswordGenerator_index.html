@@ -1,0 +1,83 @@
+* {
+    
+  box-sizing: border-box;  /* Includes the padding and border when setting a width or height for an element */
+}
+
+body {
+    background-color:  #c6ebeb;
+    color: #f3f3f3f3;
+    font-family: 'Open Sans', sans-serif;
+    /* FLEXBOX - used to center the divs vertically and horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* Setting the height to 100vh so the div will be centered vertically in the browser windoe (AKA Viewport) */
+    height: 100vh;
+    /* So the div container is not up against the edge of the Viewport on smaller screen sized*/
+    padding: 25px; 
+    }
+
+h2 {
+margin: 10px 0 20px;/* space between our element and other elements*/
+
+text-align: center;
+}
+
+.container {
+background: #33a6cc;
+padding: 15px;
+width: 350px;
+border-radius: 5px;
+}
+
+.result-container {
+background: #404040;
+height: 50px;
+font-size: 18px;
+text-decoration-color: #0e0d0d
+letter-spacing: 1px;
+padding: 10px;
+/* Flexbox used to position the span (NOTEL=: Default value for justify-content is flex-start) */
+display: flex;
+align-items: center;
+/* To position the clipboard button */
+position: relative;
+}
+
+.btn {
+    background: #c6ebeb;
+    /* Removes the default button border */
+    border: none;
+    color: #404040;
+/* Changes the cursor when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+
+}
+
+#clipboard {
+position: absolute;
+top: 5px;
+right: 5px;
+Bottom: 5px;
+font-size: 20px;
+}
+
+#generate {
+font-size: 18px;
+text-decoration-color: #0e0d0d;
+width: 100%;
+}
+
+/* up to a max-width of 400px */
+@media (max-width: 400px){
+    .result-container {
+        font-size: 14px;
+    }
+}
