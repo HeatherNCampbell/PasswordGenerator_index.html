@@ -1,83 +1,80 @@
+/* Star Selector (Selects every element in the HTML file) */
 * {
-    
-  box-sizing: border-box;  /* Includes the padding and border when setting a width or height for an element */
+  /* Includes the padding and border when setting a width or height for an element */
+  box-sizing: border-box;
 }
 
 body {
-    background-color:  #c6ebeb;
-    color: #f3f3f3f3;
-    font-family: 'Open Sans', sans-serif;
-    /* FLEXBOX - used to center the divs vertically and horizontally */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-/* Setting the height to 100vh so the div will be centered vertically in the browser windoe (AKA Viewport) */
-    height: 100vh;
-    /* So the div container is not up against the edge of the Viewport on smaller screen sized*/
-    padding: 25px; 
-    }
+  background: #0275ff;
+  color: #eef1ef;
+  font-family: 'Open Sans', sans-serif;
+  /* Flexbox used to center the div vertically and horitontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Setting the height to 100vh so the div will be centered vertically in the browser window (AKA Viewport)*/
+  height: 100vh;
+  /* So the div container is not up against the edge of the viewport on smaller screen sizes */
+  padding: 25px;
+}
 
 h2 {
-margin: 10px 0 20px;/* space between our element and other elements*/
-
-text-align: center;
+  /* Top Right/Left Bottom */
+  margin: 10px 0 20px;
+  text-align: center;
 }
 
 .container {
-background: #33a6cc;
-padding: 15px;
-width: 350px;
-border-radius: 5px;
+  background: #443850;
+  padding: 15px;
+  width: 350px;
+  border-radius: 5px;
 }
 
 .result-container {
-background: #404040;
-height: 50px;
-font-size: 18px;
-text-decoration-color: #0e0d0d
-letter-spacing: 1px;
-padding: 10px;
-/* Flexbox used to position the span (NOTEL=: Default value for justify-content is flex-start) */
-display: flex;
-align-items: center;
-/* To position the clipboard button */
-position: relative;
+  background: #243119;
+  height: 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px;
+  /* Flexbox used to position the span (NOTE: Default value for justify-content is flex-start) */
+  display: flex;
+  align-items: center;
+  /* To position the clipboard button */
+  position: relative;
 }
 
 .btn {
-    background: #c6ebeb;
-    /* Removes the default button border */
-    border: none;
-    color: #404040;
-/* Changes the cursor when hovering over a button */
-    cursor: pointer;
-    padding: 8px 12px;
+  background: #0275ff;
+  /* Removes the default button border */
+  border: none;
+  color: #eef1ef;
+  /* Changes the cursor when hovering over a button */
+  cursor: pointer;
+  padding: 8px 12px;
 }
 
 .setting {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
 }
 
 #clipboard {
-position: absolute;
-top: 5px;
-right: 5px;
-Bottom: 5px;
-font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
 }
 
 #generate {
-font-size: 18px;
-text-decoration-color: #0e0d0d;
-width: 100%;
+  font-size: 16px;
+  width: 100%;
 }
 
-/* up to a max-width of 400px */
+/* Changes font size of generated password for smaller screens */
 @media (max-width: 400px){
-    .result-container {
-        font-size: 14px;
-    }
+  .result-container {
+    font-size: 14px;
+  }
 }
